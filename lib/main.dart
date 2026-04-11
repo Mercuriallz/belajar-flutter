@@ -2,10 +2,7 @@ import 'package:belajar_flutter/pertemuan3_.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-
-  runApp(MyApp(
-    
-  ));
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -13,9 +10,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Pertemuan3(),
-    );
+    return MaterialApp(debugShowCheckedModeBanner: false, home: Pertemuan3());
   }
 }

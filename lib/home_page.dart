@@ -1,5 +1,8 @@
+
+
 import 'package:belajar_flutter/menu_item.dart';
-import 'package:belajar_flutter/pertemuan2.dart';
+import 'package:belajar_flutter/page/beranda_page.dart';
+import 'package:belajar_flutter/page/profile_page.dart';
 import 'package:belajar_flutter/test.dart';
 import 'package:flutter/material.dart';
 
@@ -15,6 +18,8 @@ class _HomePageState extends State<HomePage> {
   final List<MenuItem> screen = [
     MenuItem(title: "Pertemuan 2", page: ProfilePage()),
     MenuItem(title: "Pertemuan 3", page: TestPage()),
+    MenuItem(title: "Pertemuan 4", page: BerandaPage())
+
   ];
 
   @override
