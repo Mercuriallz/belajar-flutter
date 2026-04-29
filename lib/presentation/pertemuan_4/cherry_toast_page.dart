@@ -1,16 +1,17 @@
-import 'package:belajar_flutter/page/profile_page.dart';
-import 'package:belajar_flutter/pertemuan4.dart';
+import 'package:belajar_flutter/helper/appbar.dart';
+import 'package:belajar_flutter/presentation/pertemuan_2/profile_page.dart';
+import 'package:belajar_flutter/presentation/pertemuan_4/pertemuan4.dart';
 import 'package:flutter/material.dart';
 import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
 
-class BerandaPage extends StatefulWidget {
-  const BerandaPage({super.key});
+class CherryToastPage extends StatefulWidget {
+  const CherryToastPage({super.key});
 
   @override
-  State<BerandaPage> createState() => _BerandaPageState();
+  State<CherryToastPage> createState() => _CherryToastPageState();
 }
 
-class _BerandaPageState extends State<BerandaPage> {
+class _CherryToastPageState extends State<CherryToastPage> {
   int currentIndex = 0;
 
   List<Widget> page = [Pertemuan4(), ProfilePage()];
@@ -18,9 +19,8 @@ class _BerandaPageState extends State<BerandaPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.blueAccent,
-        title: Text("Pertemuan 4"),
+      appBar: CustomAppBar(
+       title: "Pertemuan 4",
       ),
       body: page[currentIndex],
       bottomNavigationBar: SalomonBottomBar(
@@ -31,8 +31,8 @@ class _BerandaPageState extends State<BerandaPage> {
         items: [
           SalomonBottomBarItem(
             icon: Icon(Icons.home),
-            title: Text("Beranda"),
-            selectedColor: Colors.amber,
+            title: Text("Cherry Toast"),
+            selectedColor: Color(0xFF1C4964),
           ),
           SalomonBottomBarItem(icon: Icon(Icons.person), title: Text("Profile"))
         ],

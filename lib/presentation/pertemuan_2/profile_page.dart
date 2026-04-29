@@ -6,6 +6,7 @@ class ProfilePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      
       body: SafeArea(
         child: SingleChildScrollView(
           padding: EdgeInsets.zero,
@@ -14,7 +15,7 @@ class ProfilePage extends StatelessWidget {
               Container(
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: NetworkImage("", scale: 1),
+                    image: NetworkImage("https://i0.wp.com/zaloraphilippinesblog.wpcomstaging.com/wp-content/uploads/2025/10/nailong.png?ssl=1", scale: 1),
                     fit: BoxFit.cover,
                   ),
                 ),
@@ -24,7 +25,7 @@ class ProfilePage extends StatelessWidget {
                   child: Container(
                     alignment: Alignment(0.0, 2.5),
                     child: CircleAvatar(
-                      backgroundImage: NetworkImage("", scale: 1),
+                      backgroundImage: NetworkImage("https://i0.wp.com/zaloraphilippinesblog.wpcomstaging.com/wp-content/uploads/2025/10/nailong.png?ssl=1", scale: 1),
                       radius: 60,
                     ),
                   ),

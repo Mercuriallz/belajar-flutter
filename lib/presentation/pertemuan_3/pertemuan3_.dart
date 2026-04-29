@@ -1,4 +1,4 @@
-import 'package:belajar_flutter/home_page.dart';
+import 'package:belajar_flutter/presentation/pertemuan_3/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
 
@@ -30,22 +30,22 @@ class _Pertemuan3State extends State<Pertemuan3> {
           SalomonBottomBarItem(
             icon: Icon(Icons.home),
             title: Text("Beranda"),
-            selectedColor: Colors.red,
+            selectedColor: Color(0xFF1C4964),
           ),
           SalomonBottomBarItem(
             icon: Icon(Icons.calendar_month),
             title: Text("Kalender"),
-            selectedColor: Colors.blueAccent,
+            selectedColor: Color(0xFF1C4964),
           ),
           SalomonBottomBarItem(
             icon: Icon(Icons.approval_rounded),
             title: Text("Maps"),
-            selectedColor: Colors.blueGrey,
+            selectedColor: Color(0xFF1C4964),
           ),
           SalomonBottomBarItem(
             icon: Icon(Icons.notifications),
             title: Text("Notifikasi"),
-            selectedColor: Colors.greenAccent,
+            selectedColor: Color(0xFF1C4964),
           ),
         ],
       ),

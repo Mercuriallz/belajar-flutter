@@ -1,4 +1,4 @@
-import 'package:belajar_flutter/pertemuan3_.dart';
+import 'package:belajar_flutter/presentation/pertemuan_3/pertemuan3_.dart';
 import 'package:flutter/material.dart';
 
 void main() {
