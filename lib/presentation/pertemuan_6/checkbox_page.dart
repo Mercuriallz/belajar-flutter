@@ -1,3 +1,4 @@
+import 'package:belajar_flutter/helper/responsive_helper.dart';
 import 'package:flutter/material.dart';
 
 class CheckboxPage extends StatefulWidget {
@@ -10,6 +11,8 @@ class CheckboxPage extends StatefulWidget {
 class _CheckboxPageState extends State<CheckboxPage> {
   bool minuman = false;
   bool makanan = false;
+  bool makanan2 = false;
+  bool minuman2 = false;
 
   List menu = [];
 
@@ -18,8 +21,14 @@ class _CheckboxPageState extends State<CheckboxPage> {
     if (minuman == true) {
       menu.addAll(["Teh Manis, Kopi, Air Mineral"]);
     }
+    if (minuman2 == true) {
+      menu.addAll(["Jus Jeruk, Jus Mangga, Jus Alpukat"]);
+    }
     if (makanan == true) {
       menu.addAll(["Nasi Goreng, Kwetiau Goreng, Mie Tek-Tek"]);
+    }
+    if (makanan2 == true) {
+      menu.addAll(["Mie Goreng, Kwetiau Rebus, Mie Dok-Dok"]);
     }
   }
 
@@ -48,6 +57,36 @@ class _CheckboxPageState extends State<CheckboxPage> {
                       onChanged: (v) {
                         setState(() {
                           makanan = !makanan;
+                          updateMenu();
+                        });
+                      },
+                      activeColor: Colors.lightBlueAccent,
+                      checkColor: Colors.black,
+                    ),
+                    SizedBox(width: 10),
+                    Image.asset(
+                      "assets/images/makanan.png",
+                      width: 80,
+                      fit: BoxFit.cover,
+                    ),
+                    SizedBox(width: 15),
+                    Text("Makanan"),
+                  ],
+                ),
+              ),
+            ),
+
+             Card(
+              child: SizedBox(
+                height: 70,
+                width: 250,
+                child: Row(
+                  children: [
+                    Checkbox(
+                      value: makanan2,
+                      onChanged: (v) {
+                        setState(() {
+                          makanan2 = !makanan2;
                           updateMenu();
                         });
                       },
@@ -98,6 +137,36 @@ class _CheckboxPageState extends State<CheckboxPage> {
                 ),
               ),
             ),
+
+             Card(
+              child: SizedBox(
+                height: 70,
+                width: 250,
+                child: Row(
+                  children: [
+                    Checkbox(
+                      value: minuman2,
+                      onChanged: (v) {
+                        setState(() {
+                          minuman2 = !minuman2;
+                          updateMenu();
+                        });
+                      },
+                      activeColor: Colors.lightBlueAccent,
+                      checkColor: Colors.black,
+                    ),
+                    SizedBox(width: 10),
+                     Image.asset(
+                      "assets/images/minuman.jpg",
+                      width: 80,
+                      fit: BoxFit.cover,
+                    ),
+                    SizedBox(width: 15),
+                    Text("Minuman"),
+                  ],
+                ),
+              ),
+            ),
             SizedBox(height: 20),
             Text(
               "Menu : ",
@@ -110,4 +179,6 @@ class _CheckboxPageState extends State<CheckboxPage> {
       ),
     );
   }
+
+  
 }

@@ -85,7 +85,7 @@ class DetailPage extends StatelessWidget {
       ),
       body: Center(
         child: Text(
-          "Halo, $name 👋",
+          "Halo, $name ",
           style: const TextStyle(fontSize: 20),
         ),
       ),

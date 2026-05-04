@@ -1,4 +1,5 @@
 import 'package:belajar_flutter/presentation/pertemuan_3/home_page.dart';
+import 'package:belajar_flutter/presentation/uts/uts_page.dart';
 import 'package:flutter/material.dart';
 import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
 
@@ -16,7 +17,7 @@ class _Pertemuan3State extends State<Pertemuan3> {
     HomePage(),
     Container(color: Colors.blueGrey),
     Container(color: Colors.greenAccent),
-    Container(color: Colors.greenAccent),
+    UtsPage()
 
   ];
   @override
